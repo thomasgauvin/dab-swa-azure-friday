@@ -1,11 +1,11 @@
 {
   "$schema": "https://github.com/Azure/data-api-builder/releases/download/v0.5.35/dab.draft.schema.json",
   "data-source": {
-    "database-type": "mssql",
+    "database-type": "mysql",
     "options": {
       "set-session-context": false
     },
-    "connection-string": "@env(\u0027MSSQL\u0027)"
+    "connection-string": "@env(\u0027MYSQL\u0027)"
   },
   "runtime": {
     "rest": {
@@ -30,7 +30,7 @@
   },
   "entities": {
     "Book": {
-      "source": "dbo.books",
+      "source": "books",
       "permissions": [
         {
           "role": "anonymous",
